@@ -27,7 +27,6 @@ function App() {
     </header>
 
     {<HikingMap />}
-    {<HikingMap />}
   <script src="leaflet.js"></script>
 
   
