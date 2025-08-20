@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #5d928a;
+    color: rgb(1, 1, 1);
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  label {
+    padding-right: 20px;
+  }
+  
+  .profile {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    padding: 10px, 20px;
+  }
+  
+  .message {
+    font-size: 18px;
+    width: 100px;
+    height: 100px;
+    background: #1e90ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0d70d0;
+
+  }
+
+
+  .camping-photo {
+    width: 400px;
+    border-radius: 12px;
+  }
+
+   /* Bottom nav */
+   .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+
+    .bottom-nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .bottom-nav a:hover {
+      background-color: #555;
+    }
+
+    .header {
+      color: #000;
+      background: #5d928a;
+    }
+
+    .header a {
+      color: #000;
+    }
+
