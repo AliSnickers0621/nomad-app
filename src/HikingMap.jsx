@@ -19,7 +19,8 @@ export default function HikingMap() {
   );
 
   return (
-    <div style={{ height: "100vh", width: "100%" }}>
+    <div className="object-center">
+    {/* <div style={{ paddingBottom: 60, object-center, height: "100%", width: "100%" }}> */}
       {/* Search Bar */}
       <div style={{
         position: "absolute",
@@ -45,7 +46,7 @@ export default function HikingMap() {
       <MapContainer
         center={[34.85, -82.37]}
         zoom={12}
-        style={{ height: "400px", width: "400px" }}
+        className="object-center w-full h-96"
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

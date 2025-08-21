@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 export default function BottomNav() {
   return (
    
-      <nav className="p-4 bg-gray-100 flex gap-4">
-        <Link to="/">Home</Link>
-        <Link to="/account">Account</Link>
-        <Link to="/map">Hiking Map</Link>
+      <nav className="font-bold text-black rounded-md font-sans p-5 bg-gray-700 max-w-full md:max-w-3x1">
+        <div className="md:flex">
+        <div className="w-full md:w-1/3"><Link to="/" className="text-black">Home</Link></div>
+        <div className="w-full md:w-1/3"><Link to="/account">Account</Link></div>
+        <div className="w-full md:w-1/3"><Link to="/map">Hiking Map</Link></div>
+        </div>
       </nav>
 
   );
