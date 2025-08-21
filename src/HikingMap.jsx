@@ -45,7 +45,7 @@ export default function HikingMap() {
       <MapContainer
         center={[34.85, -82.37]}
         zoom={12}
-        style={{ height: "100%", width: "100%" }}
+        style={{ height: "400px", width: "400px" }}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -1,19 +1,25 @@
- function header() {
-      return (
-        <header className="bg-#5d928a-800 text-black">
+ export default function Header() {
+  return (
+    <header className="w-full bg-#5d928a text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-right items-right p-4">
         <img
             className="h-48 w-full object-cover md:h-full md:w-48"
             src="nomad.png"
             alt="Nomad Home"
           />
-        <nav>
-          <ul className="text-md font-semibold tracking-wide text-black-500 uppercase">
-            <li><a href="#profile" className="hover:text-black-300">Profile</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
-
-     );
-    }
+  );
+}
+/*
+    <header className="w-800 bg-#5d928a text-white p-4">
+      <div className="w-full container flex justify-left items-left p-4">
+        <img
+            className="h-48 w-full object-cover md:h-full md:w-48"
+            src="nomad.png"
+            alt="Nomad Home"
+          />
+      </div>
+    </header>
+    */
+ 
