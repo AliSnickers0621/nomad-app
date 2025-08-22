@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import Home from "./Home";
 import Account from "./components/Account";
-import HikingMap from './HikingMap';
-import Signup from './Signup';
-import Signin from './Signin';
-import Dashboard from './Dashboard';
+import HikingMap from "./HikingMap";
+import Signup from "./components/Signup";
+import Signin from "./components/Signin";
+import Dashboard from "./components/Dashboard";
 
 export default function App() {
   const [count, setCount] = useState(0)
