@@ -10,18 +10,17 @@ export default function App() {
   const [count, setCount] = useState(0)
 
    return (
-    <>
+  
 
-    </>
-
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route path="/account" element={<Account />} />
-    //     <Route path="/map" element={<HikingMap />} />
-    //   </Routes>
-    // </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/map" element={<HikingMap />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default: App
