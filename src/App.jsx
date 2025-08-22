@@ -8,13 +8,14 @@ import HikingMap from "./HikingMap";
 import Signup from "./components/Signup";
 import Signin from "./components/Signin";
 import Dashboard from "./components/Dashboard";
+import { AuthContextProvider } from "./context/AuthContext.jsx";
 
 export default function App() {
   const [count, setCount] = useState(0)
 
    return (
   
-
+    <AuthContextProvider>
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,5 +26,6 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
+    </AuthContextProvider>
   );
 }
