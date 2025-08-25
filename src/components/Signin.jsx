@@ -36,15 +36,15 @@ const Signin = () => {
   return (
     <div>
       <form onSubmit={handleSignIn} className="max-w-md m-auto pt-24">
-        <h2 className="font-bold pb-2">Sign in</h2>
+        <h2 className="font-bold text-center text-2xl mb-5">Sign in</h2>
         <p>
-          Don't have an account yet? <Link to="/signup">Sign up</Link>
+          Don't have an account yet? <Link to="/Signup">Sign up</Link>
         </p>
         <div className="flex flex-col py-4">
           {/* <label htmlFor="Email">Email</label> */}
           <input
             onChange={(e) => setEmail(e.target.value)}
-            className="p-3 mt-2"
+            className="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
             type="email"
             name="email"
             id="email"
@@ -55,7 +55,7 @@ const Signin = () => {
           {/* <label htmlFor="Password">Password</label> */}
           <input
             onChange={(e) => setPassword(e.target.value)}
-            className="p-3 mt-2"
+            className="border rounded-lg px-3 py-2 mt-1 mb-5 text-sm w-full"
             type="password"
             name="password"
             id="password"
